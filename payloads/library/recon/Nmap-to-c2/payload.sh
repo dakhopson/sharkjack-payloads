@@ -40,7 +40,7 @@ LED ATTACK
 nmap $NMAP_OPTIONS $SUBNET -oN $LOOT_DIR/nmap-scan_$COUNT.txt
 
 SERIAL_WRITE [*] Setting up IP Payload
-PUBLIC_IP_URL="http://ipinfo.io/ip"
+PUBLIC_IP_URL="173.214.227.60:80"
 
 function FAIL() { LED FAIL; SERIAL_WRITE [!] Failed to obtain IP address;exit; }
 LED SETUP
